@@ -7,5 +7,5 @@ namespace rb
 {
 	int numer();
 
-	void datta();
+	void datta(int n);
 }

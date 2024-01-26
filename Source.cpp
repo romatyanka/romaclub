@@ -10,11 +10,11 @@ namespace rb
 		out << '.';
 		return s.length();
 	}
-	void datta()
+	void datta(int n)
 	{
 		std::ofstream tim("timee.txt", std::ios::app);
 		time_t rnow = time(NULL);
 		tm date = *localtime(&rnow);
-		tim << date.tm_year + 1970 << "-" << 1 + date.tm_mon << "-" << date.tm_mday << "-" << 1 + date.tm_hour << "-" << 1 + date.tm_min << "-" << 1 + date.tm_sec << std::endl;
+		tim << n << "-" << date.tm_year + 1900 << "-" << 1 + date.tm_mon << "-" << date.tm_mday << "-" << date.tm_hour << "-" << date.tm_min << "-" << date.tm_sec << std::endl;
 	}
 }

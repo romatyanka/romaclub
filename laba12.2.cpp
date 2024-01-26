@@ -2,7 +2,6 @@
 
 int main()
 {
-	rb::numer();
-	rb::datta();
+	rb::datta(rb::numer());
 	return 0;
 }
